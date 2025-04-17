@@ -3,7 +3,7 @@ A sleek and modern weather application built with Flutter that allows users to:
 
 🔍 Search for the weather of any city
 
-📍 Get the current weather based on their current location
+📍 Get current weather based on their current location
 
 🧠 Features
 Real-time weather data via API
@@ -16,47 +16,51 @@ Smooth and responsive UI
 
 Clean code architecture using MVVM pattern
 
+Follows Clean Code best practices
+
 🛠️ Tech Stack & Tools
 Flutter
 
-BLoC for state management – powerful and scalable
+BLoC for powerful and scalable state management
 
 Dio for API requests
 
-Hive for local storage (caching data when there's no internet)
+Hive for local storage (to display data offline)
 
-Geolocator or similar package for accessing device location
+Geolocator for detecting the user's location
 
-Clean Code Principles applied throughout
+💡 UI Design Inspired By:
+To meet the task's visual requirements, the design was based on this beautiful and modern Figma concept:
+Weather Forecast App UI (Figma)
 
-📹 Demo A complete walkthrough video is attached below, demonstrating the app’s functionality and explaining how everything works.
+📹 Demo
+A complete walkthrough video demonstrating the app’s functionality and structure:
 
-Video https://drive.google.com/file/d/1UGypgPiqKhlAJmuQaWrD2fGMA6NLGt9p/view?usp=sharing
+🎥 Video:
+Watch here
 
-APK https://drive.google.com/file/d/1ZRlpQDu73R_45FwggGSFcRMpHC1Qx55F/view?usp=sharing
+📱 APK:
+Download APK
 
-Directory https://drive.google.com/drive/folders/1CYcCy81o7tNIvrAnabfxGrjAu4oxiPGe?usp=drive_link
-
-![image](https://github.com/user-attachments/assets/eb98596f-cef1-4fd6-a5e4-8a0cae585d4b)
+📁 Project Directory & Assets:
+View Folder
 
 🚀 Getting Started
-Clone the repo
-
+1. Clone the repo
 bash
-
+نسخ
+تحرير
 git clone https://github.com/your-username/your-repo-name.git
 cd your-repo-name
-Install dependencies
-
+2. Install dependencies
 bash
-
-
+نسخ
+تحرير
 flutter pub get
-Run the app
-
+3. Run the app
 bash
-
-
+نسخ
+تحرير
 flutter run
 📦 Packages Used
 flutter_bloc
@@ -71,3 +75,4 @@ and more...
 
 🤝 Contributing
 Feel free to fork the project, make enhancements, and submit PRs!
+Your feedback is also very welcome 🙌
