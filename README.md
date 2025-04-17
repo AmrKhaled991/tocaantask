@@ -45,8 +45,7 @@ A complete walkthrough video demonstrating the app’s functionality and structu
 📁 Project Directory & Assets:
 [View Folder](https://drive.google.com/drive/folders/1CYcCy81o7tNIvrAnabfxGrjAu4oxiPGe)
 
-🚀 Getting Started
-1. Clone the repo
+![Screenshot 2025-04-17 192318](https://github.com/user-attachments/assets/5f75f20c-10f4-4525-956e-acf9a6a26db1)
 
 dio
 
