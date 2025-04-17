@@ -37,25 +37,26 @@ APK https://drive.google.com/file/d/1ZRlpQDu73R_45FwggGSFcRMpHC1Qx55F/view?usp=s
 
 Directory https://drive.google.com/drive/folders/1CYcCy81o7tNIvrAnabfxGrjAu4oxiPGe?usp=drive_link
 
+![image](https://github.com/user-attachments/assets/eb98596f-cef1-4fd6-a5e4-8a0cae585d4b)
+
 🚀 Getting Started
 Clone the repo
 
 bash
-نسخ
-تحرير
+
 git clone https://github.com/your-username/your-repo-name.git
 cd your-repo-name
 Install dependencies
 
 bash
-نسخ
-تحرير
+
+
 flutter pub get
 Run the app
 
 bash
-نسخ
-تحرير
+
+
 flutter run
 📦 Packages Used
 flutter_bloc
