@@ -11,7 +11,7 @@ class WeatherRepoImp extends WeatherRepo {
   @override
   Future<Either<Failure, WeatherResponse>> getWeather(String country) async {
     try {
-      var res = await weatherRepoRemote.getWeather(country.trim());
+      var res = await weatherRepoRemote.getWeather(country.trim()); 
       return right(res);
     } on Exception catch (e) {
       if (e is DioException) {

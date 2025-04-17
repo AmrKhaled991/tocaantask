@@ -1,7 +1,9 @@
 import 'package:flutter/material.dart';
+import 'package:tocaantask/core/utils/helpers/getItLocator.dart';
 import 'package:tocaantask/features/home/presentation/view/home_page.dart';
 
 void main() {
+  setupGitItLocator();
   runApp(const MyApp());
 }
 
