@@ -6,8 +6,10 @@ import 'package:tocaantask/core/utils/helpers/getItLocator.dart';
 import 'package:tocaantask/core/utils/theme/appAssets.dart';
 import 'package:tocaantask/features/home/data/models/hive_weather/hive_weather.dart';
 import 'package:tocaantask/features/home/data/repo/weather_repo.dart';
+import 'package:tocaantask/features/home/presentation/manger/location_cubit/location_cubit.dart';
 import 'package:tocaantask/features/home/presentation/manger/search_cubit/search_cubit.dart';
 import 'package:tocaantask/features/home/presentation/manger/weather_cubit/weather_cubit.dart';
+import 'package:tocaantask/features/home/presentation/view/widgets/get_user_location.dart';
 import 'package:tocaantask/features/home/presentation/view/widgets/home_body_state.dart';
 
 class MyHomePage extends StatefulWidget {
@@ -32,22 +34,25 @@ class _MyHomePageState extends State<MyHomePage> {
     });
   }
 
-  String firstOpenAppLocation()  {
+  String firstOpenAppLocation() {
     if (getit<Box<HiveWeather>>().get("weather")?.city == null) {
-      return 'alexandria';
+      return 'cairo';
     }
     return getit<Box<HiveWeather>>().get("weather")!.city;
   }
+
   @override
   Widget build(BuildContext context) {
     return MultiBlocProvider(
       providers: [
         BlocProvider(
           create:
-              (context) => WeatherCubit(getit<WeatherRepo>())
-                ..getWeather(firstOpenAppLocation()),
+              (context) =>
+                  WeatherCubit(getit<WeatherRepo>())
+                    ..getWeather(firstOpenAppLocation()),
         ),
         BlocProvider(create: (context) => SearchCubit()),
+        BlocProvider(create: (context) => LocationCubit()),
       ],
       child: Scaffold(
         body: Stack(
@@ -64,7 +69,7 @@ class _MyHomePageState extends State<MyHomePage> {
               child: AnimatedOpacity(
                 duration: Duration(milliseconds: 1000),
                 opacity: _isVisible ? 1.0 : 0.0,
-                child: HomeBodyState(),
+                child: SingleChildScrollView(child: Column(children: [HomeBodyState(), GetUserLocation()])),
               ),
             ),
           ],

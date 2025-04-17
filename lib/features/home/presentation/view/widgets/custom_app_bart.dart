@@ -24,9 +24,13 @@ class _CustomAppBartState extends State<CustomAppBart> {
         if (showCity) ...[
           SvgPicture.asset(Assets.imagesMap),
           const SizedBox(width: 20),
-          FittedBox(
-            fit: BoxFit.scaleDown,
-            child: Text(widget.weather.city, style: Styles.textBold24()),
+          SizedBox(
+            width: MediaQuery.sizeOf(context).width * 0.6,
+            child: Text(
+              widget.weather.city,
+              style: Styles.textBold24(),
+              overflow: TextOverflow.ellipsis,
+            ),
           ),
         ],
         const Spacer(),

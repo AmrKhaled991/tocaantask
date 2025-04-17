@@ -58,6 +58,7 @@ class HomeBodyData extends StatelessWidget {
               ),
             ),
           ),
+          SizedBox(height: 40),
         ],
       ),
     );

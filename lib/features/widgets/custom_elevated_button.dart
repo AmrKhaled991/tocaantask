@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:tocaantask/constant.dart';
 import 'package:tocaantask/features/widgets/base_button.dart';
 import 'package:tocaantask/features/widgets/default_progress_indicator.dart';
 
@@ -54,7 +55,7 @@ class CustomElevatedButton extends BaseButton {
       return const DefaultProgressIndicator(
         size: 25,
         strokeWidth: 2,
-        color: Colors.white,
+        color: primaryColor,
       );
     }
     return Row(
