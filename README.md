@@ -31,39 +31,22 @@ Geolocator for detecting the user's location
 
 💡 UI Design Inspired By:
 To meet the task's visual requirements, the design was based on this beautiful and modern Figma concept:
-Weather Forecast App UI (Figma)
+[Weather Forecast App UI (Figma)](https://www.figma.com/design/VLwRxL75Hz2Rsz7UyaARQ4/Weather-Forecast-App--Community---Copy-?node-id=1-2357&m=dev)
 
 📹 Demo
 A complete walkthrough video demonstrating the app’s functionality and structure:
 
 🎥 Video:
-Watch here
+[Watch here](https://drive.google.com/file/d/1UGypgPiqKhlAJmuQaWrD2fGMA6NLGt9p/view)
 
 📱 APK:
-Download APK
+[Download APK](https://drive.google.com/file/d/1ZRlpQDu73R_45FwggGSFcRMpHC1Qx55F/view)
 
 📁 Project Directory & Assets:
-View Folder
+[View Folder](https://drive.google.com/drive/folders/1CYcCy81o7tNIvrAnabfxGrjAu4oxiPGe)
 
 🚀 Getting Started
 1. Clone the repo
-bash
-نسخ
-تحرير
-git clone https://github.com/your-username/your-repo-name.git
-cd your-repo-name
-2. Install dependencies
-bash
-نسخ
-تحرير
-flutter pub get
-3. Run the app
-bash
-نسخ
-تحرير
-flutter run
-📦 Packages Used
-flutter_bloc
 
 dio
 
