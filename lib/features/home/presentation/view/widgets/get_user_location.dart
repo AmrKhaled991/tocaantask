@@ -42,7 +42,7 @@ class GetUserLocation extends StatelessWidget {
           (context, state) => CustomElevatedButton(
             onPressed: () async {
               final search = context.read<SearchCubit>().state;
-              context.read<LocationCubit>().getLocation(search.isNotEmpty || search == 'error');
+              context.read<LocationCubit>().getLocation(search.isNotEmpty);
               context.read<SearchCubit>().clearSearch();
             },
             width: 300,
