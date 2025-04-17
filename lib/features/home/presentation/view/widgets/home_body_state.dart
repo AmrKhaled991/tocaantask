@@ -62,7 +62,7 @@ class HomeBodyState extends StatelessWidget {
               );
             }
             if (state is WeatherError) {
-              context.read<SearchCubit>().clearSearch();
+              context.read<SearchCubit>().submitSearch("error");
             }
           },
         ),
