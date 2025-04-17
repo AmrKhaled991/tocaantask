@@ -4,6 +4,7 @@ import 'dart:math';
 import 'package:dio/dio.dart';
 import 'package:flutter/material.dart';
 import 'package:tocaantask/core/errors/cust0m_errors.dart';
+import 'package:tocaantask/core/utils/theme/Styles.dart';
 import 'package:tocaantask/features/widgets/custom_elevated_button.dart';
 
 class AppError extends StatelessWidget {
@@ -34,7 +35,7 @@ class AppError extends StatelessWidget {
         padding: const EdgeInsets.all(15),
         margin: const EdgeInsets.symmetric(horizontal: 20),
         decoration: BoxDecoration(
-          color: Colors.grey.shade100,
+          color: Colors.white.withOpacity(0.3),
           borderRadius: BorderRadius.circular(10),
         ),
         child: SingleChildScrollView(
@@ -52,6 +53,9 @@ class AppError extends StatelessWidget {
                 const SizedBox(height: 10),
                 CustomElevatedButton(
                   text: "Try Again",
+                  buttonTextStyle: Styles.textRegular18().copyWith(
+                    color: Colors.black,
+                  ),
                   onPressed: tryAgain,
                   buttonStyle: ButtonStyle(
                     backgroundColor: WidgetStatePropertyAll(Colors.white),
