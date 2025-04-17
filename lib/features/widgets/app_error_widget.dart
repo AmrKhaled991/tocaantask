@@ -53,7 +53,7 @@ class AppError extends StatelessWidget {
                 const SizedBox(height: 10),
                 CustomElevatedButton(
                   text: "Try Again",
-                  buttonTextStyle: Styles.textSemiBold18().copyWith(
+                  buttonTextStyle: Styles.textRegular18().copyWith(
                     color: Colors.black,
                   ),
                   onPressed: tryAgain,

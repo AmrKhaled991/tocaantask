@@ -42,7 +42,7 @@ class ServerError extends Failure {
     } else if (status == 404) {
       return ServerError('Ruqste not found');
     } else if (status == 400)
-      return ServerError('Ops somthing went wronge ,plz try agein later');
+      return ServerError('Please Search for another city');
     else
       return ServerError('Ops somthing went wronge ,plz try agein later');
   }

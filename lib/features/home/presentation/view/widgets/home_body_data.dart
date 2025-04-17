@@ -1,11 +1,10 @@
 import 'package:cached_network_image/cached_network_image.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter_svg/flutter_svg.dart';
 import 'package:skeletonizer/skeletonizer.dart';
 import 'package:tocaantask/core/utils/helpers/time_formater.dart';
 import 'package:tocaantask/core/utils/theme/Styles.dart';
-import 'package:tocaantask/core/utils/theme/appAssets.dart';
 import 'package:tocaantask/features/home/data/models/intites/weather.dart';
+import 'package:tocaantask/features/home/presentation/view/widgets/custom_app_bart.dart';
 import 'package:tocaantask/features/home/presentation/view/widgets/wind_and_hum_section.dart';
 
 class HomeBodyData extends StatelessWidget {
@@ -18,16 +17,7 @@ class HomeBodyData extends StatelessWidget {
       padding: const EdgeInsets.symmetric(horizontal: 20),
       child: Column(
         children: [
-          Row(
-            mainAxisAlignment: MainAxisAlignment.center,
-            children: [
-              SvgPicture.asset(Assets.imagesMap),
-              const SizedBox(width: 20),
-              Text(weather.city, style: Styles.textBold24()),
-              const Spacer(),
-              Icon(Icons.search),
-            ],
-          ),
+          CustomAppBart(weather: weather),
           const SizedBox(height: 30),
           CachedNetworkImage(
             imageUrl: 'http:${weather.iconImage}',
