@@ -1,3 +1,4 @@
+import 'package:tocaantask/features/home/data/models/hive_weather/hive_weather.dart';
 import 'package:tocaantask/features/home/data/models/intites/weather.dart';
 
 class WeatherResponse {
@@ -16,6 +17,20 @@ class WeatherResponse {
   Weather? toWeather() {
     if (location == null || current == null || current!.condition == null) return null;
     return Weather(
+      id: location!.tzId ?? '',
+      city: location!.name ?? '',
+      wind: current!.windDegree?.toDouble() ?? 0,
+      hum: current!.humidity?.toDouble() ?? 0,
+      temp: current!.tempC ?? 0,
+      desc: current!.condition!.text ?? '',
+      iconImage: current!.condition!.icon ?? '',
+      localTime: current!.lastUpdated ?? '',
+    );
+  }
+
+   HiveWeather? toHiveWeather() {
+    if (location == null || current == null || current!.condition == null) return null;
+    return HiveWeather(
       id: location!.tzId ?? '',
       city: location!.name ?? '',
       wind: current!.windDegree?.toDouble() ?? 0,

@@ -15,6 +15,7 @@ class WeatherLoaded extends WeatherState {
 }
 class WeatherError extends WeatherState {
   final String message;
-  WeatherError(this.message);
+  final Weather? weather;
+  WeatherError(this.message, this.weather);
   @override List<Object?> get props => [message];
 }
