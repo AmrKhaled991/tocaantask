@@ -1,15 +1,11 @@
 import 'package:cached_network_image/cached_network_image.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter_svg/flutter_svg.dart';
 import 'package:skeletonizer/skeletonizer.dart';
-import 'package:tocaantask/constant.dart';
 import 'package:tocaantask/core/utils/helpers/time_formater.dart';
 import 'package:tocaantask/core/utils/theme/Styles.dart';
-import 'package:tocaantask/core/utils/theme/appAssets.dart';
 import 'package:tocaantask/features/home/data/models/intites/weather.dart';
 import 'package:tocaantask/features/home/presentation/view/widgets/custom_app_bart.dart';
 import 'package:tocaantask/features/home/presentation/view/widgets/wind_and_hum_section.dart';
-import 'package:tocaantask/features/widgets/custom_elevated_button.dart';
 
 class HomeBodyData extends StatelessWidget {
   final Weather weather;

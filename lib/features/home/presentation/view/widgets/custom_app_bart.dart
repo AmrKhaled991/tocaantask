@@ -26,7 +26,6 @@ class _CustomAppBartState extends State<CustomAppBart> {
           const SizedBox(width: 20),
           SizedBox(
             width: MediaQuery.sizeOf(context).width * 0.6,
-
             child: Text(
               widget.weather.city,
               style: Styles.textBold24(),
