@@ -1,16 +1,63 @@
-# tocaantask
+🌦️ Weather App
+A sleek and modern weather application built with Flutter that allows users to:
 
-A new Flutter project.
+🔍 Search for the weather of any city
 
-## Getting Started
+📍 Get current weather based on their current location
 
-This project is a starting point for a Flutter application.
+🧠 Features
+Real-time weather data via API
 
-A few resources to get you started if this is your first Flutter project:
+Location-based weather detection
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+Offline support using local caching
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+Smooth and responsive UI
+
+Clean code architecture using MVVM pattern
+
+Follows Clean Code best practices
+
+🛠️ Tech Stack & Tools
+Flutter
+
+BLoC for powerful and scalable state management
+
+Dio for API requests
+
+Hive for local storage (to display data offline)
+
+Geolocator for detecting the user's location
+
+💡 UI Design Inspired By:
+To meet the task's visual requirements, the design was based on this beautiful and modern Figma concept:
+[Weather Forecast App UI (Figma)](https://www.figma.com/design/VLwRxL75Hz2Rsz7UyaARQ4/Weather-Forecast-App--Community---Copy-?node-id=1-2357&m=dev)
+
+📹 Demo
+A complete walkthrough video demonstrating the app’s functionality and structure:
+
+🎥 Video:
+[Watch here](https://drive.google.com/file/d/1UGypgPiqKhlAJmuQaWrD2fGMA6NLGt9p/view)
+
+📱 APK:
+[Download APK](https://drive.google.com/file/d/1ZRlpQDu73R_45FwggGSFcRMpHC1Qx55F/view)
+
+📁 Project Directory & Assets:
+[View Folder](https://drive.google.com/drive/folders/1CYcCy81o7tNIvrAnabfxGrjAu4oxiPGe)
+
+![Screenshot 2025-04-17 192318](https://github.com/user-attachments/assets/5f75f20c-10f4-4525-956e-acf9a6a26db1)
+
+![image](https://github.com/user-attachments/assets/ea263689-7bee-4b5f-9efd-c36073c92f10)
+
+
+dio
+
+hive
+
+geolocator
+
+and more...
+
+🤝 Contributing
+Feel free to fork the project, make enhancements, and submit PRs!
+Your feedback is also very welcome 🙌
